@@ -12,11 +12,11 @@ jobs:
 
     steps:
       # 1️⃣ Récupérer le code
-      - name: projet_yolo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       # 2️⃣ Se connecter à Docker Hub
-      - name: arianedohou
+      - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.arianedohou }}
